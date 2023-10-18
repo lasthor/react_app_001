@@ -1,4 +1,4 @@
-import '../sass/header.sass'
+import '../sass/header.scss'
 const Header = ({titile}) => {
   console.log(`Screen width: ${window.innerWidth}px`);
   return (

@@ -1,4 +1,4 @@
-import '../sass/section.sass'
+import '../sass/section.scss'
 import videsection from '../vids/committement--.mp4'
 const section_01 = () => {
   return (

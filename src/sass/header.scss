@@ -1,0 +1,136 @@
+@import 'breakpoints'; // Use mixins sm, md, lg, xl, and doublexl for responsive screens
+
+.border_ {
+  border-style: solid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+    margin-top: 0.5rem;
+
+  div {
+    width: fit-content;
+  }
+
+  a {
+    color: #244463;
+    font-family: Lexend;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-decoration: none;
+
+    @include doublexl {
+      font-size: 1.25rem;
+    }
+
+    @include xl {
+      font-size: 0.9rem;
+    }
+
+    @include lg {
+      font-size: 0.7rem;
+    }
+  }
+
+  .a_3 {
+        color: #E7E6E6;
+        padding: 4px;
+        border-radius: 6px;
+        background: #F1C40F;
+        width: 8.51vw;
+        height: 24%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+  .regis_btn { // Button for registrations
+    background: #F1C40F;
+    width: 9.5vw;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 6px;
+
+    @include doublexl {
+      height: 81%;
+    }
+
+    @include xl {
+      height: 81%;
+    }
+
+    @include lg {
+      height: 65%;
+    }
+      a {
+        display: flex;
+        color: #E7E6E6;
+        font-size: 1.375rem;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        @include xl {
+          font-size: 0.95rem;
+        }
+
+        @include lg {
+          font-size: 0.75rem;
+        }
+      }
+    
+  }
+
+  .img_ {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    @include xl {
+      width: 83%;
+    }
+
+    @include md {
+      width: 80%;
+    }
+
+    @include sm { // Smaller screens
+      width: 70%;
+    }
+  }
+
+  .div__ {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    @include xl {
+      gap: 1vw;
+    }
+
+    @include lg {
+      gap: 0.7vw;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .span_ {
+    display: none;
+
+    @include md {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 2rem;
+        color: #F1C40F;
+      }
+    }
+  }
+}
