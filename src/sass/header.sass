@@ -1,23 +1,44 @@
+@import 'breakpoints' //$ to use mixin sm,md,lg,xl ... responsvie screen
+
+
 .border_
     border-style: solid
 nav 
     display: flex
     justify-content: space-between
-    padding: 0 2vw
+    padding: 0 1vw
     color: green
     margin-top: 0.5rem
+    
     
     div 
         width: fit-content
         
+    h3
+        color: #000
+        @include xl
+            color: #363062
+
+        @include lg
+            color: #DA0C81
+        @include doublexl
+            color: #362FD9
        
     a
         color: #244463
-        font-size: 18px
         font-family: Lexend
         font-weight: 600
         word-wrap: break-word
         text-decoration: none
+        
+        @include doublexl
+            font-size: 1.25rem
+        @include xl
+            font-size: 0.9rem
+
+        @include lg 
+            font-size: 0.7rem
+
     .a_3
         color: #E7E6E6
         padding: 4px
@@ -30,15 +51,21 @@ nav
         justify-content: center
         
 
-    .regis_btn
+    .regis_btn //@ button of inscriptions
         background: #F1C40F
-        width: 9.083vw
-        height: 67%
+        width: 9.5vw
         border-radius: 5px
         border: none
-        padding: 0px
+        padding: 0px 6px
         
-
+        @include doublexl
+            height:81%
+        
+        @include xl
+            height: 81%
+        
+        @include lg 
+            height: 65%
         a
             display: flex
             color: #E7E6E6
@@ -47,6 +74,12 @@ nav
             height: 100%
             align-items: center
             justify-content: center
+
+            @include xl
+                font-size: 0.95rem
+            @include lg 
+                font-size: 0.75rem
+            
             
 
 
@@ -55,12 +88,37 @@ nav
         display: flex
         width: 100%
         height: 100%
-       
+
+        @include xl
+            width: 83%
+        @include md
+            width: 80%
+        @include sm                 //$ sm screen
+            width: 70%
+            
+        
+           
 
     .div__
         display: flex
         align-items: center
-        gap: 2.5vw
-        
+        gap: 2vw
 
+        @include xl
+            gap: 1vw
+        @include lg
+            gap: 0.7vw
+
+        @include md
+            display: none
+        
+    .span_
+        display: none
+        @include md
+            display: flex
+            align-items: center
+            span
+                font-size: 2rem
+                color: #F1C40F
+               
   

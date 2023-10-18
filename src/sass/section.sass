@@ -1,16 +1,5 @@
-$color1: #0A146D
-$color2: rgba(7.81, 13.28, 62.48, 0.94)
-$color3: rgba(3.55, 3.13, 24.23, 0.86)
-$color4: #24064C
-$color5: rgba(15.27, 25.20, 114.54, 0)
-
-$stop1: 2%
-$stop2: 20%
-$stop3: 77%
-$stop4: 100%
-$stop5: 100%
 @use './header.sass'
-
+@import 'breakpoints' //$ to use mixin sm,md,lg,xl ... responsvie screen
 
 
 .section_01
@@ -21,11 +10,32 @@ $stop5: 100%
     margin-top: 5vh
     justify-content: center
     align-items: end
+    overflow: hidden
+
+    @include md
+        margin-top: 1.5vh
+
+    h3
+        @include xl
+            color: #ffff
+    
 
 
     .video
         width: 60%
+        @extend .border_
+        @include xl
+            width: 70%
+        @include lg
+            width: 80%
+        @include md
+            width: 100%
+        @include sm
+            width: 151vw
     div
-        
+        width: 20%
+    
+    
+
         
         

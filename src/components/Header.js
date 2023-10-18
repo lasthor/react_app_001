@@ -1,5 +1,6 @@
 import '../sass/header.sass'
 const Header = ({titile}) => {
+  console.log(`Screen width: ${window.innerWidth}px`);
   return (
     <nav>
       <div>
@@ -20,6 +21,11 @@ const Header = ({titile}) => {
         <button className='regis_btn'>
           <a href="">{titile}</a>
         </button>
+      </div>
+      <div className='span_'>
+        <span class="material-symbols-outlined">
+          menu
+        </span>
       </div>
     </nav>
   )
