@@ -1,0 +1,86 @@
+.border_ {
+  border-style: solid;
+}
+
+nav a {
+  color: #244463;
+  font-family: Lexend;
+  font-size: 1.2vw;
+}
+nav .a_3 {
+  color: #E7E6E6;
+  background: #F1C40F;
+  width: 8.51vw;
+  height: 30%;
+}
+nav .regis_btn {
+  background: #F1C40F;
+  width: 9.5vw;
+}
+@media (min-width: 1500px) {
+  nav .regis_btn {
+    height: 81%;
+  }
+}
+@media (max-width: 1500px) {
+  nav .regis_btn {
+    height: 81%;
+  }
+}
+@media (max-width: 1103px) {
+  nav .regis_btn {
+    height: 65%;
+  }
+}
+nav .regis_btn a {
+  color: #E7E6E6;
+  font-size: 1.5vw;
+}
+@media (max-width: 1500px) {
+  nav .img_ {
+    width: 83%;
+  }
+}
+@media (max-width: 905px) {
+  nav .img_ {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  nav .img_ {
+    width: 70%;
+  }
+}
+nav .div__ {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+@media (max-width: 1500px) {
+  nav .div__ {
+    gap: 1vw;
+  }
+}
+@media (max-width: 1103px) {
+  nav .div__ {
+    gap: 0.7vw;
+  }
+}
+@media (max-width: 905px) {
+  nav .div__ {
+    display: none;
+  }
+}
+nav .span_ {
+  display: none;
+}
+@media (max-width: 905px) {
+  nav .span_ {
+    display: flex;
+    align-items: center;
+  }
+  nav .span_ span {
+    font-size: 2rem;
+    color: #F1C40F;
+  }
+}/*# sourceMappingURL=header.css.map */
