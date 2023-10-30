@@ -1,18 +1,15 @@
 @use './header.scss';
 @import 'breakpoints'; // Import breakpoints
 
-.section_01 {
-  display: flex;
-  margin-top: 5vh;
-  justify-content: center;
-  
 
+
+.section_01 {
+  
   @include md {
     margin-top: 1.5vh;
   }
 
 
-  .video {
-    width: 100%;
-  }
 }
+
+

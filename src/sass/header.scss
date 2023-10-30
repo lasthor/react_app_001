@@ -5,54 +5,24 @@
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1vw;
-    margin-top: 0.5rem;
-
-  div {
-    width: fit-content;
-  }
-
+  
   a {
     color: #244463;
     font-family: Lexend;
-    font-weight: 600;
-    word-wrap: break-word;
-    text-decoration: none;
-
-    @include doublexl {
-      font-size: 1.25rem;
-    }
-
-    @include xl {
-      font-size: 0.9rem;
-    }
-
-    @include lg {
-      font-size: 0.7rem;
-    }
+    font-size: 1.2vw;
+    
   }
 
   .a_3 {
-        color: #E7E6E6;
-        padding: 4px;
-        border-radius: 6px;
-        background: #F1C40F;
-        width: 8.51vw;
-        height: 24%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      color: #E7E6E6;
+      background: #F1C40F;
+
   }
 
   .regis_btn { // Button for registrations
     background: #F1C40F;
     width: 9.5vw;
-    border-radius: 5px;
-    border: none;
-    padding: 0px 6px;
-
+    
     @include doublexl {
       height: 81%;
     }
@@ -65,21 +35,9 @@ nav {
       height: 65%;
     }
       a {
-        display: flex;
         color: #E7E6E6;
-        font-size: 1.375rem;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
+        font-size: 1.5vw;
 
-        @include xl {
-          font-size: 0.95rem;
-        }
-
-        @include lg {
-          font-size: 0.75rem;
-        }
       }
     
   }

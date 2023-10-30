@@ -1,0 +1,197 @@
+@import './breakpoints.scss';
+@mixin topgrph
+{
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.section_04
+{
+    height: 160vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-image: url('../imgs/bg_enseignement_.png'), url('../imgs/bg_yellow_raison.png');
+    background-repeat: no-repeat, no-repeat; 
+    background-position: top left, bottom right;
+    background-size: 36vw 60%, 100vw 55%;
+
+    @include lg
+    {
+        height: fit-content;
+    }
+
+    .div_title 
+    {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 3vw;
+        h1
+        {
+            max-width: fit-content;
+            color: #F1C40F;
+            font-size: 2.8vw;
+            @include topgrph;
+
+            .Trigli
+            {
+                background-color:#2C5177;
+                padding-right: 27%;
+                color: #ffff;
+
+            }
+            .Creche
+            {
+                color: #2C5177;
+            }
+        }
+
+    }
+    .middel_row
+        {
+            display: flex;
+            justify-content: center;
+            div 
+            {
+                display: flex;
+                align-items: center;
+                img 
+                    {
+                        width: 32vw ;    
+                    }
+
+                    p 
+                    {
+                        max-width: fit-content;
+                        display: inline-block;
+                        margin-left: 4vw;
+                        color: #2C5177;
+                        font-size: 1.4vw;
+                        @include topgrph;
+                        
+                   }
+
+            }
+            
+        }
+
+        .last_row
+        {
+            display: grid;
+            grid-template-rows: 1fr auto;
+           
+
+            .last_row_div1
+            {
+                height: fit-content;
+                
+
+                .div2_title
+                    {
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        h1 
+                        {
+                            
+                            color: #2C5177;
+                            font-size: 2.5vw;
+                            @include topgrph;
+                            margin: 0 1vw;
+                        }
+                        img 
+                        {
+                            width: 3vw;
+                        }
+                    }
+
+                
+            }
+
+            .last_row_div2
+            {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+               
+                position: relative ;
+                
+                .img_resion 
+                {
+                   
+                    width: 48%;
+                }
+
+                div
+                {
+                    display: inline;
+                    height: 16%;
+                    width: 20vw;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                }
+                p
+                {
+                    display: inline-block;
+                    font-size: 1.3vw;
+                    margin: 0 2vw;
+                    color: #08406A;
+
+                }
+                .img_raisons
+                {
+                    height: 5vw;
+                    width: 5vw;
+                    
+
+                }
+                
+                .raison1
+                {
+                    top: 14%;
+                    left: 17%;
+                    background: url('../imgs/bg_raison1.png') center center/106% 115%no-repeat;
+                }
+
+                .raison2
+                {
+                    top: 46%;
+                    left: 11%;
+                    background: url('../imgs/bg_raison2.png') center center/106% 115%no-repeat;
+                }
+
+                .raison3
+                {
+                    top: 76%;
+                    left: 17%;
+                    background: url('../imgs/bg_raison3.png') center center/106% 115% no-repeat;
+                }
+                .raison4
+                {
+                    top: 14%;
+                    left: 61%;
+                    background: url('../imgs/bg_raison4.png') center center/106% 115% no-repeat;
+                }
+                .raison5
+                {
+                    top: 46%;
+                    left: 66%;
+                    background: url('../imgs/bg_raison5.png') center center/106% 115% no-repeat;
+                }
+
+                .raison6
+                {
+                    top:76%;
+                    left: 61%;
+                    background: url('../imgs/bg_raison6.png') center center/106% 115% no-repeat;
+                }
+            }
+
+            
+            
+            
+        }
+}
