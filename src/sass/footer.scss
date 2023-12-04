@@ -1,0 +1,178 @@
+@import './breakpoints.scss';
+
+@mixin Topograph
+{
+    font-family: Lexend;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: white;
+}
+
+footer 
+{
+    background-color:hsla(207,89%,19%,1);
+    background-image:
+    radial-gradient(at 54% 100%, hsla(240,65%,9%,0.5) 0px, transparent 50%),
+    radial-gradient(at 99% 99%, hsla(240,65%,9%,0.5) 0px, transparent 50%),
+    radial-gradient(at 0% 99%, hsla(240,65%,9%,0.5) 0px, transparent 50%);
+    
+
+    
+    .div1
+    {
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+        padding-top: 3%;
+        
+
+        @include lg
+        {
+            grid-template-columns: auto auto;
+            padding-left: 5%;
+        }
+
+        @include sm 
+        {
+            grid-template-columns: auto;
+            padding-left: 5%;
+        }
+
+        
+
+        .container-div
+        {
+            display: inline-block;
+            width: fit-content;
+
+            @include sm 
+            {
+                margin: 2% 0;
+            }
+
+            .div-of-content
+            {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                @include Topograph;
+
+                @include sm 
+                {
+                    font-size: 1rem;
+                }
+            }
+
+            p 
+            {
+                display: inline-block;
+                margin: 0;
+            }
+    
+            .center-iteam
+            {
+                display: flex;
+                align-items: center;
+            }
+
+           .marge-b-t
+           {
+            margin: 3% 0%;
+           }
+
+           .font-i
+           {
+            color: hsla(207,89%,19%,1);
+            background-color: white;
+            padding: 10%;
+            border-radius: 1rem;
+            font-size: 4rem;
+
+            @include md
+            {
+                font-size: 3rem;
+            }
+           }
+
+           .center-icons
+           {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                a 
+                {
+                    margin: 0 3%;
+                }
+           }
+
+           
+
+           
+        }
+
+        .align-center
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        .witdh-adj
+        {
+            
+        }
+
+        img 
+        {
+            background-color: white;
+        }
+
+        h1 
+        {
+            background-color: #F0C30F;
+            padding: 3%;
+            width: fit-content;
+            font-size: 1.5rem;
+            @include Topograph;
+
+            @include sm 
+            {
+                font-size: 1.2rem;   
+            }
+        }
+
+        .icon_size
+        {
+            font-size: xxx-large;
+        }
+
+       
+
+    }
+
+    .marg-l 
+    {
+        margin-left: 1rem;
+    }
+
+    .marge-b-2
+    {
+        margin-bottom: 20%;
+    }
+
+    
+
+    .div2-cpright
+    {
+        background-color: #F0C30F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        .cp-h1
+        {
+            font-size: 1.5vw;
+            @include Topograph;
+            color :#063760;
+        }
+    }
+}

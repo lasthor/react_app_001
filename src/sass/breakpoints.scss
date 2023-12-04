@@ -1,4 +1,4 @@
-$breakpoints: ("xs": 0, "sm": 480px, "md": 905px, "lg": 1103px, "xl": 1500px, "2xl": 1500px);
+$breakpoints: ("xs": 0, "sm": 700px, "md": 905px, "lg": 1103px, "xl": 1500px, "2xl": 1500px);
 
 @mixin doublexl {
   @media (min-width: map-get($breakpoints, '2xl')) {
