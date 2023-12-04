@@ -1,0 +1,102 @@
+@import './breakpoints.scss' ;
+
+.section_06
+{
+
+    //@ declare mixins 
+     
+    @mixin bg_img_conf
+
+    {
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 86% 100%;
+    }
+
+
+    .first_row
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        div 
+        {
+            
+            width: 22%;
+            height: 25vw;
+            display: flex;
+            align-items: end;
+            margin: 0 1%;
+            p 
+            {
+                color: #F9F9F9;
+                font-size: 2.5vw;
+                font-family: Lexend;
+                font-weight: 900;
+                word-wrap: break-word ;
+
+                span 
+                {
+                    color: #073D6A;
+                }
+            }
+        }
+
+        
+
+        #first_row_div1
+        {
+            background: url('../imgs/sport_slider.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div2
+        {
+            background: url('../imgs/culturelles_slider.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div3
+        {
+            background: url('../imgs/extra_slider.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div4
+        {
+            background: url('../imgs/scolaire_slider_.png');
+            @include bg_img_conf() ;
+        }
+    }
+
+    .chbg
+    {
+
+        #first_row_div1
+        {
+            background: url('../imgs/sorties_slider_.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div2
+        {
+            background: url('../imgs/voyage_slider.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div3
+        {
+            background: url('../imgs/summer_slider.png');
+            @include bg_img_conf() ;
+        }
+
+        #first_row_div4
+        {
+            background: url('../imgs/robotique_slider.png');
+            @include bg_img_conf() ;
+        }
+    }
+
+}
+

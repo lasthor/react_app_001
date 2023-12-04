@@ -1,0 +1,119 @@
+@import './breakpoints.scss' ;
+
+.section_5
+{
+    .titel 
+    {
+        @include sm 
+        {
+            margin: 2% 0;
+
+        }
+
+
+        h1 
+        {
+            color: #073D6A;
+            font-size: 3vw;
+            font-family: Lexend;
+            font-weight: 700;
+            word-wrap: break-word;
+
+            @include sm 
+            {
+                font-size: 8vw;
+
+            }
+        }
+
+        img
+            {
+                width: 3.5vw;
+                height: 7vw;
+
+                @include sm 
+                {
+                    width: 7vw;
+                    height: 19vw;
+                           
+                }
+            }
+    }
+
+    .cycle
+    {
+        display: flex;
+
+        @include sm 
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            width: 25%;
+            height: 32vw;
+            display: flex;
+            align-items: end;
+            
+            @include sm 
+            {
+                width: 100%;
+                height: 130vw;         
+                margin: 2% 0;
+            }
+
+            
+            
+            img 
+            {
+                width: 100%;
+                z-index: -1;
+            }
+
+            h1 
+            {
+                
+            
+                color: #F9F9F9;
+                font-size: 4vw;
+                font-family: Lexend;
+                font-weight: 700;
+                word-wrap: break-word ;
+
+                @include sm 
+                {
+                    font-size: 10vw;
+                }
+            }
+
+           
+        }
+
+        #div_mat
+        {
+            background: linear-gradient(141deg, rgb(5, 1, 6) 0%, rgba(0,0,0,0.35) 0%) 
+            ,url('../imgs/early.png') center center /100% 100% no-repeat;
+
+        }
+
+        #div_Prima
+        {
+            background: linear-gradient(141deg, rgb(218, 50, 50) 0%, rgba(187,46,46,0.25) 0%)
+            ,url('../imgs/primary.png') center center /100% 100% no-repeat;
+
+        }
+        #div_Coll
+        {
+            background: linear-gradient(141deg, rgb(37, 11, 185) 0%, rgba(46,53,187,0.25) 0%)
+            ,url('../imgs/lower-secondary.png') center center /100% 100% no-repeat;
+
+        }
+        #div_Lyc
+        {
+            background: linear-gradient(141deg, rgba(146,35,193,1) 0%, rgba(146,35,193,0.25) 0%)
+            ,url('../imgs/upper-secondary.png') center center /100% 100% no-repeat;
+
+        }
+    }
+}
